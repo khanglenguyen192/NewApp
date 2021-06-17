@@ -50,12 +50,11 @@
                 <ColumnDefinition Width="15*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
+                <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
 
 
             <StackLayout  Grid.Column="1">
-
 
                 <Button Text="Product"
                         x:Name="btnPage2"
