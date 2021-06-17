@@ -17,5 +17,9 @@ namespace NewApp
             InitializeComponent();
         }
 
+        private void ButtonBack_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
+        }
     }
 }
