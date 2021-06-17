@@ -45,17 +45,16 @@
 
         <Grid Margin="20,20,20,10">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="300" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="15*" />
+                <ColumnDefinition Width="70*" />
+                <ColumnDefinition Width="15*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
+                <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
 
 
             <StackLayout  Grid.Column="1">
-
 
                 <Button Text="Product"
                         x:Name="btnPage2"
