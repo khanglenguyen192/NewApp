@@ -2,80 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NewApp.DetailPage">
-    <Grid Margin="20, 0, 10, 20" FlowDirection="MatchParent">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions>
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-
-        <Image WidthRequest="150"
-               HeightRequest="150"
-               Grid.Row="0"
-               Grid.Column="0"
-               Grid.ColumnSpan="2"
-               Background="Yellow"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               Margin="20"
-               />
-        
-        <Label Text="Attribute 1: "
-               FontAttributes="Bold"
-               FontSize="20"
-               Grid.Row="1"
-               />
-        <Label Text="Attribute 2: "
-               FontAttributes="Bold"
-               FontSize="20"
-               Grid.Row="2"/>
-        <Label Text="Attribute 3: "
-               FontAttributes="Bold"
-               FontSize="20"
-               Grid.Row="3"/>
-
-        <Label Text="Value 1"
-               FontAttributes="Bold"
-               FontSize="20"
-               Grid.Row="1"
-               Grid.Column="1"/>
-        <Label Text="Value 2"
-               FontAttributes="Bold"
-               FontSize="20"
-               Grid.Row="2"
-               Grid.Column="1"/>
-        <Label Text="Value 3"
-               FontAttributes="Bold"
-               FontSize="20"
-               Grid.Row="3"
-               Grid.Column="1"/>
-
-        <Label Text="Description"
-               FontAttributes="Bold"
-               FontSize="20"
-               Grid.Row="4"
-               Grid.ColumnSpan="2"
-               Margin="10"
-               HorizontalOptions="Center"/>
-
-        <Button Text="Button 1"
-                Grid.Row="5"
-                Grid.ColumnSpan="2"
-                Background="Green"
-                WidthRequest="200"
-                HeightRequest="50"
-                HorizontalOptions="Center"
-                Clicked="Button1_OnClicked"/>
-
-    </Grid>
+    
+    
     
   
 </ContentPage>
