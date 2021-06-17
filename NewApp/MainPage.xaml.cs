@@ -15,14 +15,6 @@ namespace NewApp
             InitializeComponent();
         }
 
-        private void ButtonEnter_OnClicked(object sender, EventArgs e)
-        {
-            txtName.Text = "Name: " + txtNumber.Text;
-            txtNumber.Text = "";
-            
-
-        }
-
         private void ButtonPage2_OnClicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new DetailPage());

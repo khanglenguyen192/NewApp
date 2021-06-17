@@ -3,49 +3,86 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NewApp.MainPage">
 
-    <StackLayout>
-        <SearchBar Placeholder="Search" />
+    <StackLayout >
+        <Grid Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
-        <Label Text="Input"
-               HorizontalTextAlignment="Center"/>
+            <SearchBar Placeholder="Search"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       HorizontalOptions="Center"
+                       WidthRequest="500"
+                       Grid.ColumnSpan="3"
+                       />
+
+            <Image x:Name="imgImage"
+                   Aspect="AspectFit"
+                   WidthRequest="30"
+                   HeightRequest="30"
+                   HorizontalOptions="End"
+                   Grid.Row="0"
+                   Grid.Column="1"
+                   Source="Image/icon_cart.png"/>
+            
+            <Image 
+                   Aspect="AspectFit"
+                   WidthRequest="30"
+                   HeightRequest= "30"
+                   HorizontalOptions="End"
+                   Grid.Row="0"
+                   Grid.Column="2"
+                   Source="Image/icon_account.png"/>
+
+        </Grid>
+
+
+        <Grid Margin="20,20,20,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="300" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+
+            <StackLayout  Grid.Column="1">
+
+
+                <Button Text="Product"
+                        x:Name="btnPage2"
+                        Clicked="ButtonPage2_OnClicked"
+                        WidthRequest="200"
+                        HeightRequest="50"
+                        HorizontalOptions="Center"
+                        CornerRadius="20"
+                        Background="Green"/>
+            </StackLayout>
+
+            <StackLayout Background="Gray"
+                         Grid.Column="0">
+                
+            </StackLayout>
+            <StackLayout Background="Pink"
+                         Grid.Column="2">
+                
+            </StackLayout>
+
+        </Grid>
+
         
-        <Entry Placeholder="Please Enter Your Name"
-               x:Name="txtNumber"/>
+
         
-        <Button Text="Enter"
-               x:Name="btnEnter"
-                Background="Blue"
-                HeightRequest="40"
-                WidthRequest="50"
-                HorizontalOptions="Start"
-                Clicked="ButtonEnter_OnClicked"/>
+
         
-        <Label Text="some thing"
-               x:Name="txtName" 
-               HorizontalTextAlignment="Center"/>
-
-        <Image x:Name="imgImage"
-               Aspect="AspectFit"
-               WidthRequest="150"
-               HeightRequest="150"
-               Background="Gray"
-               HorizontalOptions="Center"/>
-
-
-        <Button Text="Page 2"
-                x:Name="btnPage2"
-                Clicked="ButtonPage2_OnClicked"
-                WidthRequest="200"
-                HeightRequest="50"
-                HorizontalOptions="Center"/>
-
-        <Image Background="Gray"
-               Aspect="AspectFit"
-               WidthRequest="150"
-               HeightRequest= "220"
-               HorizontalOptions="Center"
-               Source= "Image/img1.jpg"
-               />
         
     </StackLayout>
 

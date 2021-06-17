@@ -5,7 +5,7 @@
     <Grid Margin="20, 0, 10, 20" FlowDirection="MatchParent">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -20,16 +20,19 @@
         <Image WidthRequest="150"
                HeightRequest="150"
                Grid.Row="0"
+               Grid.Column="0"
                Grid.ColumnSpan="2"
                Background="Yellow"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-               Margin="20"/>
+               Margin="20"
+               />
         
         <Label Text="Attribute 1: "
                FontAttributes="Bold"
                FontSize="20"
-               Grid.Row="1"/>
+               Grid.Row="1"
+               />
         <Label Text="Attribute 2: "
                FontAttributes="Bold"
                FontSize="20"
