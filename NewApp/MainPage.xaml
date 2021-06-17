@@ -9,7 +9,7 @@
         <Label Text="Input"
                HorizontalTextAlignment="Center"/>
         
-        <Entry Placeholder="Number"
+        <Entry Placeholder="Please Enter Your Name"
                x:Name="txtNumber"/>
         
         <Button Text="Enter"
@@ -17,6 +17,7 @@
                 Background="Blue"
                 HeightRequest="40"
                 WidthRequest="50"
+                HorizontalOptions="Center"
                 Clicked="ButtonEnter_OnClicked"/>
         
         <Label Text="some thing"

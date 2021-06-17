@@ -18,8 +18,8 @@ namespace NewApp
         private void ButtonEnter_OnClicked(object sender, EventArgs e)
         {
             txtName.Text = "Name: " + txtNumber.Text;
-            // imgImage.Background = "green";
-            // imgImage.Source = ImageSource.FromFile("Resources/drawable/book_tltd.jpg");
+            txtNumber.Text = "";
+            
 
         }
 
