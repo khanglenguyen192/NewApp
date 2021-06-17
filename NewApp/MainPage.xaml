@@ -4,22 +4,19 @@
              x:Class="NewApp.MainPage">
 
     <StackLayout >
-        <Grid Margin="20">
+        <Grid Margin="25, 20, 20, 20">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="60*" />
-                <ColumnDefinition Width="20*" />
-                <ColumnDefinition Width="20*" />
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
             <SearchBar Placeholder="Search"
-                       Grid.Row="0"
-                       Grid.Column="0"
-                       HorizontalOptions="Center"
-                       WidthRequest="500"
-                       Grid.ColumnSpan="3"
+                       Grid.Row="0"                       
+                       HorizontalOptions="Fill"             
                        />
 
             <Image x:Name="imgImage"
@@ -45,9 +42,9 @@
 
         <Grid Margin="20,20,20,10">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="15*" />
-                <ColumnDefinition Width="70*" />
-                <ColumnDefinition Width="15*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="80*" />
+                <ColumnDefinition Width="10*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*" />
@@ -70,6 +67,7 @@
                          Grid.Column="0">
                 
             </StackLayout>
+            
             <StackLayout Background="Pink"
                          Grid.Column="2">
                 

@@ -3,22 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NewApp.DetailPage">
 
-
     <StackLayout >
-        
-        <Grid Margin="20,20,20,10">
+        <Grid Margin="20">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="15*" />
-                <ColumnDefinition Width="70*" />
-                <ColumnDefinition Width="15*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="80*" />
+                <ColumnDefinition Width="10*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
+                <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
 
-
             <StackLayout  Grid.Column="1">
-
 
                 <Button Text="Back"
                         x:Name="btnBack"
@@ -34,6 +30,7 @@
                          Grid.Column="0">
 
             </StackLayout>
+            
             <StackLayout Background="Pink"
                          Grid.Column="2">
 
